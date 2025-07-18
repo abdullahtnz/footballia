@@ -78,7 +78,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  width: clamp(330px, 80vw, 550px);
+  width: clamp(330px, 85vw, 550px);
   height: clamp(230px, 28vh, 300px);
 
   padding: 1rem 2rem;
@@ -93,7 +93,7 @@ body {
 }
 
 #welcomeContainer h1 {
-  font-size: clamp(1.3rem, 4vw, 2.5rem);
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
 }
 
 #welcomeContainer p {
