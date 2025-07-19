@@ -24,6 +24,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.dnone{
+    display: none;
+}
+
+.dblock{
+    display: block;
+}
+
 #startButton {
   padding: 6px 24px;
   font-size: 1.2rem;
@@ -35,6 +43,7 @@ body {
   margin-top: 36px;
   z-index: 0;
   position: relative;
+  cursor: pointer;
 }
 
 #startButton:after {
@@ -78,10 +87,10 @@ body {
   align-items: center;
   justify-content: center;
 
-  width: clamp(330px, 85vw, 550px);
+  width: clamp(330px, 80vw, 550px);
   height: clamp(230px, 28vh, 300px);
 
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1rem 1 rem;
   background-color: #e3e6e4;
   border-radius: 24px;
 
@@ -90,6 +99,7 @@ body {
   -moz-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.75);
 
   text-align: center;
+  transition: 3s ease;
 }
 
 #welcomeContainer h1 {
@@ -99,4 +109,214 @@ body {
 #welcomeContainer p {
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
+ 
+#leagueChoiceContainer {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+
+  width: clamp(330px, 80vw, 550px);
+  min-height: clamp(250px, 40vh, 400px);
+
+  padding: 1rem 2rem;
+  background-color: #e3e6e4;
+  border-radius: 24px;
+
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+
+  text-align: center;
+  overflow-y: auto;
+}
+
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; 
+  justify-content: center;
+  padding: 16px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  transition: transform 0.2s, border 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: inherit;
+  z-index: -1;
+  background: linear-gradient(45deg, #417d4f, #367d55 );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+@media(max-width: 355px){
+    #choiceContainer{
+        width: 310px;
+    }
+    #modeChoiceContainer{
+        width: 310px;
+    }
+}
+
+#modeChoiceContainer {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: clamp(312px, 60vw, 450px);
+  height: clamp(300px, 46dvh, 550px);
+
+  padding: 1rem 2rem 1rem 1 rem;
+  background-color: #e3e6e4;
+  border-radius: 24px;
+
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.75);
+
+  text-align: center;
+  transition: 3s ease;
+}
+
+#modeChoiceContainer h1 {
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
+}
+
+#modeChoiceContainer p {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+
+#modeContainer{
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* now 4 per row */
+  grid-template-rows: repeat(4, auto);    /* 2 rows */
+  gap: 8px 12px; /* smaller gap */
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.mode{
+  padding: 6px 24px;
+  font-size: 1.1rem;
+  background-color: #417d4f;
+  color: #f9fcfa;
+  text-decoration: none;
+  border-radius: 18px;
+  transition: 0.3s ease;
+  margin-top: 8px;
+  z-index: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .mode{
+    padding: 6px 16px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .mode{
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .mode{
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  .comingSoon::after {
+    font-size: 0.7rem;
+    padding: 0px 2px;
+  }
+}
+
+.comingSoon{
+  position: relative;
+}
+
+.comingSoon::after {
+  content: "soon";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 0px 4px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  cursor: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
