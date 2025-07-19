@@ -13,13 +13,46 @@
   />
 </head>
 <body>
-  <div id="welcomeContainer">
+  <div class="dnone" id="welcomeContainer" >
     <h1>Welcome to FootBallia</h1>
     <p style="text-align: center;">
-      You can pick your favourite club and hit the top in your league
+      Pick your favourite club and hit the top in your league
     </p>
-    <a href="home.html" id="startButton">Start</a>
+    <a id="startButton">Start</a>
   </div>
+
+    <div id="modeChoiceContainer" >
+      <h1>Choose an option</h1>
+      <p style="margin-bottom: 8px;">Pick something you'd like to try out</p>
+        <div id="modeContainer">
+          <a class="mode " id="matchSimulator">Match simulator</a>
+          <a class="mode comingSoon">League simulator</a>
+          <a class="mode comingSoon">Team maker</a>
+          <a class="mode comingSoon">Football quiz</a>
+          <a class="mode comingSoon">Football bingo</a>
+          <a class="mode comingSoon">Transer news</a>
+          <a class="mode comingSoon">Team Comparison</a>
+          <a class="mode comingSoon special">Career mode</a>
+        </div>
+    </div>
+  
+
+  
+    <div id="leagueChoiceContainer">
+        <h1>Choose your league</h1>
+        <p>You can only choose one league to play</p>
+        <div class="cardContainer">
+              <div class="card" id="premier"><img src="assets/premier-league-2-logo.png" alt=""></div>
+              <div class="card" id="laliga"><img src="assets/laliga-logo.png" alt=""></div>
+              <div class="card" id="seriea"><img src="assets/serie-a-logo.png" alt=""></div>
+              <div class="card" id="bundesliga"><img src="assets/bundesliga-logo.png" alt=""></div>
+              <div class="card" id="ligue1"><img src="assets/ligue-1-logo.png" alt=""></div>
+              <div class="card" id="ligaPortugal"><img src="assets/po1.png" alt=""></div>
+              <div class="card" id="superlig"><img src="assets/Trendyol-super-lig-dikey-logo.png" alt="" style="width: 200%; height: 200%;"></div>
+              <div class="card" id="misli"><img src="assets/az1.png" alt="" style="width: 130% ; height: 130%;"></div>
+        </div>
+    </div>
+  
 
   <script src="play.js"></script>
 </body>
