@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,3 +103,109 @@
   <script src="play.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FootBallia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="dnone" id="welcomeContainer" >
+    <h1>Welcome to FootBallia</h1>
+    <p style="text-align: center;">
+      A fun website for football fans
+    </p>
+    <a id="startButton">Start</a>
+  </div>
+
+    <div id="modeChoiceContainer" >
+      <h1>Choose an option</h1>
+      <p style="margin-bottom: 8px;">Pick something you'd like to try out</p>
+        <div id="modeContainer">
+          <a class="mode " id="matchSimulator" >Match simulator</a>
+          <a class="mode comingSoon">League simulator</a>
+          <a class="mode comingSoon" id="startLine">StartLine</a>
+          <a class="mode comingSoon">Football quiz</a>
+          <a class="mode comingSoon">Football bingo</a>
+          <a class="mode comingSoon">Transer news</a>
+          <a class="mode comingSoon">Team Comparison</a>
+          <a class="mode comingSoon special">Career mode</a>
+        </div>
+    </div>
+  
+    <div id="matchSimulatorContainer">
+        <h1>Pick clubs</h1>
+        <p>Choose two clubs you want to simulate match</p>
+        <div class="cardContainer">
+            <div class="card" id="matchSimulatorTeam1"></div>
+            <span style="font-weight: 900; display: flex; align-items: center;">VS</span>
+            <div class="card" id="matchSimulatorTeam2"></div>
+        </div>
+        <a id="matchSimulatorStart">Start match</a>
+        <a id="matchSimulatorBack" style="margin-top: 6px; cursor: pointer;">< Back</a>
+    </div>
+
+    <div id="startLineContainer">
+      <h1>Create your line-up</h1>
+      <p>You can customize it however you want</p>
+    </div>
+    
+    <div id="leagueChoiceContainer">
+        <h1>Choose your league</h1>
+        <p>Pick one league to continue</p>
+        <div class="cardContainer">
+              <div class="card" id="premier"><img src="assets/leagues/premier-league-2-logo.png" alt=""></div>
+              <div class="card" id="laliga"><img src="assets/leagues/laliga-logo.png" alt=""></div>
+              <div class="card" id="seriea"><img src="assets/leagues/serie-a-logo.png" alt=""></div>
+              <div class="card" id="bundesliga"><img src="assets/leagues/bundesliga-logo.png" alt=""></div>
+              <div class="card" id="ligue1"><img src="assets/leagues/ligue-1-logo.png" alt=""></div>
+              <div class="card" id="ligaPortugal"><img src="assets/leagues/po1.png" alt=""></div>
+              <div class="card" id="superlig"><img src="assets/leagues/Trendyol-super-lig-dikey-logo.png" alt="" style="width: 200%; height: 200%;"></div>
+              <div class="card" id="misli"><img src="assets/leagues/az1.png" alt="" style="width: 130% ; height: 130%;"></div>
+        </div>
+    </div>
+
+     <div id="ChoiceContainer">
+        <h1>Choose your team</h1>
+        <p>Pick one team to continue</p>
+        <div class="cardContainer" id="LeagueTeams">
+               
+        </div>
+    </div>
+
+    <div id="resultContainer">
+        <h1>Simulation results</h1>
+        <p>These are expected and mathematically calculated results</p>
+        <div class="cardContainer">
+            <div class="card" id="matchSimulatorResult1"></div>
+            <span style="font-weight: 900; display: flex; align-items: center; font-size: 1.2rem;" id="scoreBoard"></span>
+            <div class="card" id="matchSimulatorResult2"></div>
+        </div>
+        <h3><span id="finalText"></span></h3>
+        <p>Probabilities in order:</p>
+        <div id="probability">
+          
+          <div id="win1"></div>
+          
+          <div id="draw"></div>
+          <div id="win2"></div>
+        </div>
+        <br>
+        <a id="matchSimulatorPlayAgain">Play again</a>
+        <a id="matchSimulatorMainMenu" style="margin-top: 6px; cursor: pointer;">< Main Menu</a>
+    </div>
+  
+  <script src="matchSim.js"> </script>
+  <script src="play.js"></script>
+</body>
+</html>
+>>>>>>> 59038bbac9c4ae88b820b0cdcb8336fc16c6a921
