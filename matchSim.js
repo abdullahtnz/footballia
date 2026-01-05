@@ -44,9 +44,9 @@ const laligaTeams = [
 ];
 
 const serieaTeams = [
-    {name: "Inter Milan", gen: 90, logo: '<img src="assets/serieaTeams/intermilan.png" />'},
+    {name: "Inter Milan", gen: 90, logo: '<img src="assets/serieaTeams/intermilan.png" />'}, // done
     {name: "Napoli", gen: 89, logo: '<img src="assets/serieaTeams/napoli.png" />'},
-    {name: "AC Milan", gen: 89, logo: '<img src="assets/serieaTeams/acmilan.png" />'},
+    {name: "AC Milan", gen: 89, logo: '<img src="assets/serieaTeams/acmilan.png" />'}, //done
     {name: "Juventus", gen: 87, logo: '<img src="assets/serieaTeams/juventus.png" />'},
     {name: "Atalanta", gen: 86, logo: '<img src="assets/serieaTeams/atalanta.png" />'},
     {name: "Roma", gen: 85, logo: '<img src="assets/serieaTeams/roma.png" />'},
@@ -61,7 +61,7 @@ const serieaTeams = [
     {name: "Sassuolo", gen: 72, logo: '<img src="assets/serieaTeams/sassuolo.png" />'},
     {name: "Verona", gen: 69, logo: '<img src="assets/serieaTeams/verona.png" />'},
     {name: "Lecce", gen: 71, logo: '<img src="assets/serieaTeams/lecce.png" />'},
-    {name: "Empoli", gen: 68, logo: '<img src="assets/serieaTeams/empoli.png" />'},
+    {name: "Empoli", gen: 68, logo: '<img src="assets/serieaTeams/empoli.png" />'}, //done
     {name: "Frosinone", gen: 66, logo: '<img src="assets/serieaTeams/frosinone.png" />'},
     {name: "Salernitana", gen: 65, logo: '<img src="assets/serieaTeams/salernitana.png" />'}
 ];
