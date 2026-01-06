@@ -45,12 +45,12 @@ const laligaTeams = [
 
 const serieaTeams = [
     {name: "Inter Milan", gen: 90, logo: '<img src="assets/serieaTeams/intermilan.png" />'}, // done
-    {name: "Napoli", gen: 89, logo: '<img src="assets/serieaTeams/napoli.png" />'},
+    {name: "Napoli", gen: 89, logo: '<img src="assets/serieaTeams/napoli.png" />'}, //done
     {name: "AC Milan", gen: 89, logo: '<img src="assets/serieaTeams/acmilan.png" />'}, //done
-    {name: "Juventus", gen: 87, logo: '<img src="assets/serieaTeams/juventus.png" />'},
+    {name: "Juventus", gen: 87, logo: '<img src="assets/serieaTeams/juventus.png" />'}, //done
     {name: "Atalanta", gen: 86, logo: '<img src="assets/serieaTeams/atalanta.png" />'},
-    {name: "Roma", gen: 85, logo: '<img src="assets/serieaTeams/roma.png" />'},
-    {name: "Lazio", gen: 83, logo: '<img src="assets/serieaTeams/lazio.png" />'},
+    {name: "Roma", gen: 85, logo: '<img src="assets/serieaTeams/roma.png" />'}, //done
+    {name: "Lazio", gen: 83, logo: '<img src="assets/serieaTeams/lazio.png" />'}, //done
     {name: "Bologna", gen: 82, logo: '<img src="assets/serieaTeams/bologna.png" />'},
     {name: "Fiorentina", gen: 81, logo: '<img src="assets/serieaTeams/fiorentina.png" />'},
     {name: "Torino", gen: 77, logo: '<img src="assets/serieaTeams/torino.png" />'},
@@ -422,20 +422,6 @@ document.getElementById("matchSimulatorStart").onclick = function(){
             prob2 = probabilityArray.filter(item => item === 2).length;
             draw = probabilityArray.filter(item => item === 0).length;
             break;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         default:
             console.log("working on it...");
     };  
