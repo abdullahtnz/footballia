@@ -66,6 +66,27 @@ const serieaTeams = [
     {name: "Salernitana", gen: 65, logo: '<img src="assets/serieaTeams/salernitana.png" />'}
 ];
 
+const bundesligaTeams = [
+    {name: "Bayer Leverkusen", gen: 82, logo: '<img src="assets/bundesligaTeams/bayerleverkusen.png" />'},
+    {name: "Bayern Munich", gen: 91, logo: '<img src="assets/bundesligaTeams/bayernmunich.png" />'},
+    {name: "VfB Stuttgart", gen: 81, logo: '<img src="assets/bundesligaTeams/stuttgart.png" />'},
+    {name: "RB Leipzig", gen: 86, logo: '<img src="assets/bundesligaTeams/rbleipzig.png" />'},
+    {name: "Borussia Dortmund", gen: 88, logo: '<img src="assets/bundesligaTeams/borussiadortmund.png" />'},
+    {name: "Eintracht Frankfurt", gen: 82, logo: '<img src="assets/bundesligaTeams/eintrachtfrankfurt.png" />'},
+    {name: "SC Freiburg", gen: 79, logo: '<img src="assets/bundesligaTeams/freiburg.png" />'},
+    {name: "TSG Hoffenheim", gen: 78, logo: '<img src="assets/bundesligaTeams/hoffenheim.png" />'},
+    {name: "FC Augsburg", gen: 76, logo: '<img src="assets/bundesligaTeams/augsburg.png" />'},
+    {name: "VfL Wolfsburg", gen: 80, logo: '<img src="assets/bundesligaTeams/wolfsburg.png" />'},
+    {name: "Borussia Mönchengladbach", gen: 78, logo: '<img src="assets/bundesligaTeams/gladbach.png" />'},
+    {name: "Werder Bremen", gen: 74, logo: '<img src="assets/bundesligaTeams/bremen.png" />'},
+    {name: "1. FC Heidenheim", gen: 73, logo: '<img src="assets/bundesligaTeams/heidenheim.png" />'},
+    {name: "1. FC Union Berlin", gen: 75, logo: '<img src="assets/bundesligaTeams/unionberlin.png" />'},
+    {name: "VfL Bochum", gen: 72, logo: '<img src="assets/bundesligaTeams/bochum.png" />'},
+    {name: "1. FSV Mainz 05", gen: 74, logo: '<img src="assets/bundesligaTeams/mainz.png" />'},
+    {name: "FC St. Pauli", gen: 71, logo: '<img src="assets/bundesligaTeams/stpauli.png" />'},
+    {name: "FC Holstein Kiel", gen: 70, logo: '<img src="assets/bundesligaTeams/kiel.png" />'}
+];
+
 // Match simulator team selection
 let team1 = document.getElementById("matchSimulatorTeam1");
 let team2 = document.getElementById("matchSimulatorTeam2");
@@ -156,6 +177,37 @@ document.getElementById("seriea").onclick = function () {
   document.getElementById("ChoiceContainer").style.display = "flex";
 
   serieaTeams.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = item.logo;
+
+     div.onclick = function () {
+      document.getElementById("ChoiceContainer").style.display = "none"
+             if (currentlySelectedTeam === "team1") {
+                 team1.innerHTML = item.logo;
+                  gen1 = item.gen
+                  name1 = item.name;
+                 document.getElementById("matchSimulatorResult1").innerHTML = item.logo;
+             } else if (currentlySelectedTeam === "team2") {
+                 team2.innerHTML =  item.logo;
+                  gen2 = item.gen
+                  name2 = item.name;
+                 document.getElementById("matchSimulatorResult2").innerHTML = item.logo;
+             }     
+    };
+    container.appendChild(div);
+  });
+};
+
+
+document.getElementById("bundesliga").onclick = function () {
+  const container = document.getElementById("LeagueTeams");
+  container.innerHTML = "";
+
+  document.getElementById("leagueChoiceContainer").style.display = "none";
+  document.getElementById("ChoiceContainer").style.display = "flex";
+
+  bundesligaTeams.forEach((item) => {
     const div = document.createElement("div");
     div.className = "card";
     div.innerHTML = item.logo;
