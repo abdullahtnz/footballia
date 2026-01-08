@@ -105,7 +105,7 @@ team2.onclick = function() {
     currentlySelectedTeam = "team2";
 }
 
-// Premier League team selection
+//Premier League team selection
 document.getElementById("premier").onclick = function () {
   const container = document.getElementById("LeagueTeams");
   container.innerHTML = "";
@@ -136,7 +136,7 @@ document.getElementById("premier").onclick = function () {
   });
 };
 
-//laliga team selection
+//Laliga team selection
 document.getElementById("laliga").onclick = function () {
   const container = document.getElementById("LeagueTeams");
   container.innerHTML = "";
@@ -168,7 +168,7 @@ document.getElementById("laliga").onclick = function () {
 };
 
 
-//seriea team selection
+//Seriea team selection
 document.getElementById("seriea").onclick = function () {
   const container = document.getElementById("LeagueTeams");
   container.innerHTML = "";
@@ -199,7 +199,7 @@ document.getElementById("seriea").onclick = function () {
   });
 };
 
-
+//Bundesliga team selection
 document.getElementById("bundesliga").onclick = function () {
   const container = document.getElementById("LeagueTeams");
   container.innerHTML = "";
