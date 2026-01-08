@@ -62,7 +62,7 @@ const serieaTeams = [
     {name: "Verona", gen: 69, logo: '<img src="assets/serieaTeams/verona.png" />'}, //done
     {name: "Lecce", gen: 71, logo: '<img src="assets/serieaTeams/lecce.png" />'}, //done
     {name: "Empoli", gen: 68, logo: '<img src="assets/serieaTeams/empoli.png" />'}, //done
-    {name: "Frosinone", gen: 66, logo: '<img src="assets/serieaTeams/frosinone.png" />'},
+    {name: "Frosinone", gen: 66, logo: '<img src="assets/serieaTeams/frosinone.png" />'}, //done
     {name: "Salernitana", gen: 65, logo: '<img src="assets/serieaTeams/salernitana.png" />'}
 ];
 
