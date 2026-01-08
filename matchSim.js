@@ -67,8 +67,8 @@ const serieaTeams = [
 ];
 
 const bundesligaTeams = [
-    {name: "Bayer Leverkusen", gen: 82, logo: '<img src="assets/bundesligaTeams/bayerleverkusen.png" />'},
-    {name: "Bayern Munich", gen: 91, logo: '<img src="assets/bundesligaTeams/bayernmunich.png" />'},
+    {name: "Bayer Leverkusen", gen: 82, logo: '<img src="assets/bundesligaTeams/bayerleverkusen.png" />'}, //done
+    {name: "Bayern Munich", gen: 91, logo: '<img src="assets/bundesligaTeams/bayernmunich.png" />'}, //done
     {name: "VfB Stuttgart", gen: 81, logo: '<img src="assets/bundesligaTeams/stuttgart.png" />'},
     {name: "RB Leipzig", gen: 86, logo: '<img src="assets/bundesligaTeams/rbleipzig.png" />'},
     {name: "Borussia Dortmund", gen: 88, logo: '<img src="assets/bundesligaTeams/borussiadortmund.png" />'},
