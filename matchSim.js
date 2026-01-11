@@ -81,10 +81,10 @@ const bundesligaTeams = [
     {name: "Werder Bremen", gen: 74, logo: '<img src="assets/bundesligaTeams/bremen.png" />'}, //done
     {name: "1. FC Heidenheim", gen: 73, logo: '<img src="assets/bundesligaTeams/heidenheim.png" />'}, //done
     {name: "1. FC Union Berlin", gen: 75, logo: '<img src="assets/bundesligaTeams/unionberlin.png" />'},
-    {name: "VfL Bochum", gen: 72, logo: '<img src="assets/bundesligaTeams/bochum.png" />'},
-    {name: "1. FSV Mainz 05", gen: 74, logo: '<img src="assets/bundesligaTeams/mainz.png" />'},
-    {name: "FC St. Pauli", gen: 71, logo: '<img src="assets/bundesligaTeams/stpauli.png" />'},
-    {name: "FC Holstein Kiel", gen: 70, logo: '<img src="assets/bundesligaTeams/kiel.png" />'}
+    {name: "VfL Bochum", gen: 72, logo: '<img src="assets/bundesligaTeams/bochum.png" />'}, //done
+    {name: "1. FSV Mainz 05", gen: 74, logo: '<img src="assets/bundesligaTeams/mainz.png" />'}, //done
+    {name: "FC St. Pauli", gen: 71, logo: '<img src="assets/bundesligaTeams/stpauli.png" />'}, //done
+    {name: "FC Holstein Kiel", gen: 70, logo: '<img src="assets/bundesligaTeams/kiel.png" />'} //done
 ];
 
 // Match simulator team selection
