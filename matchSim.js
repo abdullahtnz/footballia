@@ -89,7 +89,7 @@ const bundesligaTeams = [
 
 const ligue1Teams = [
     {name: "Paris Saint-Germain", gen: 92, logo: '<img src="assets/ligue1Teams/psg.png" />'}, //done
-    {name: "AS Monaco", gen: 84, logo: '<img src="assets/ligue1Teams/monaco.png" />'},
+    {name: "AS Monaco", gen: 84, logo: '<img src="assets/ligue1Teams/monaco.png" />'}, //done
     {name: "Olympique Lyonnais", gen: 83, logo: '<img src="assets/ligue1Teams/lyon.png" />'},
     {name: "LOSC Lille", gen: 82, logo: '<img src="assets/ligue1Teams/lille.png" />'},
     {name: "Stade Rennais", gen: 81, logo: '<img src="assets/ligue1Teams/rennes.png" />'},
