@@ -88,24 +88,24 @@ const bundesligaTeams = [
 ];
 
 const ligue1Teams = [
-    {name: "Bayer Leverkusen", gen: 82, logo: '<img src="assets/bundesligaTeams/bayerleverkusen.png" />'}, //done
-    {name: "Bayern Munich", gen: 91, logo: '<img src="assets/bundesligaTeams/bayernmunich.png" />'}, //done
-    {name: "VfB Stuttgart", gen: 81, logo: '<img src="assets/bundesligaTeams/stuttgart.png" />'}, //done
-    {name: "RB Leipzig", gen: 86, logo: '<img src="assets/bundesligaTeams/rbleipzig.png" />'},  //done
-    {name: "Borussia Dortmund", gen: 88, logo: '<img src="assets/bundesligaTeams/borussiadortmund.png" />'}, //done
-    {name: "Eintracht Frankfurt", gen: 82, logo: '<img src="assets/bundesligaTeams/eintrachtfrankfurt.png" />'}, //done
-    {name: "SC Freiburg", gen: 79, logo: '<img src="assets/bundesligaTeams/freiburg.png" />'}, //done
-    {name: "TSG Hoffenheim", gen: 78, logo: '<img src="assets/bundesligaTeams/hoffenheim.png" />'}, //done
-    {name: "FC Augsburg", gen: 76, logo: '<img src="assets/bundesligaTeams/augsburg.png" />'}, //done
-    {name: "VfL Wolfsburg", gen: 80, logo: '<img src="assets/bundesligaTeams/wolfsburg.png" />'}, //done
-    {name: "Borussia Mönchengladbach", gen: 78, logo: '<img src="assets/bundesligaTeams/gladbach.png" />'}, //done
-    {name: "Werder Bremen", gen: 74, logo: '<img src="assets/bundesligaTeams/bremen.png" />'}, //done
-    {name: "1. FC Heidenheim", gen: 73, logo: '<img src="assets/bundesligaTeams/heidenheim.png" />'}, //done
-    {name: "1. FC Union Berlin", gen: 75, logo: '<img src="assets/bundesligaTeams/unionberlin.png" />'},
-    {name: "VfL Bochum", gen: 72, logo: '<img src="assets/bundesligaTeams/bochum.png" />'}, //done
-    {name: "1. FSV Mainz 05", gen: 74, logo: '<img src="assets/bundesligaTeams/mainz.png" />'}, //done
-    {name: "FC St. Pauli", gen: 71, logo: '<img src="assets/bundesligaTeams/stpauli.png" />'}, //done
-    {name: "FC Holstein Kiel", gen: 70, logo: '<img src="assets/bundesligaTeams/kiel.png" />'} //done
+    {name: "Paris Saint-Germain", gen: 92, logo: '<img src="assets/ligue1Teams/psg.png" />'}, //done
+    {name: "AS Monaco", gen: 84, logo: '<img src="assets/ligue1Teams/monaco.png" />'},
+    {name: "Olympique Lyonnais", gen: 83, logo: '<img src="assets/ligue1Teams/lyon.png" />'},
+    {name: "LOSC Lille", gen: 82, logo: '<img src="assets/ligue1Teams/lille.png" />'},
+    {name: "Stade Rennais", gen: 81, logo: '<img src="assets/ligue1Teams/rennes.png" />'},
+    {name: "Olympique de Marseille", gen: 83, logo: '<img src="assets/ligue1Teams/marseille.png" />'},
+    {name: "RC Lens", gen: 80, logo: '<img src="assets/ligue1Teams/lens.png" />'},
+    {name: "OGC Nice", gen: 82, logo: '<img src="assets/ligue1Teams/nice.png" />'},
+    {name: "Montpellier HSC", gen: 77, logo: '<img src="assets/ligue1Teams/montpellier.png" />'},
+    {name: "Stade de Reims", gen: 76, logo: '<img src="assets/ligue1Teams/reims.png" />'},
+    {name: "FC Nantes", gen: 75, logo: '<img src="assets/ligue1Teams/nantes.png" />'},
+    {name: "Toulouse FC", gen: 74, logo: '<img src="assets/ligue1Teams/toulouse.png" />'},
+    {name: "Le Havre AC", gen: 73, logo: '<img src="assets/ligue1Teams/lehavre.png" />'},
+    {name: "Strasbourg", gen: 75, logo: '<img src="assets/ligue1Teams/strasbourg.png" />'},
+    {name: "Stade Brestois", gen: 79, logo: '<img src="assets/ligue1Teams/brest.png" />'},
+    {name: "FC Lorient", gen: 72, logo: '<img src="assets/ligue1Teams/lorient.png" />'},
+    {name: "AJ Auxerre", gen: 71, logo: '<img src="assets/ligue1Teams/auxerre.png" />'},
+    {name: "Angers SCO", gen: 70, logo: '<img src="assets/ligue1Teams/angers.png" />'}
 ];
 
 // Match simulator team selection
