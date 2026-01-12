@@ -87,6 +87,27 @@ const bundesligaTeams = [
     {name: "FC Holstein Kiel", gen: 70, logo: '<img src="assets/bundesligaTeams/kiel.png" />'} //done
 ];
 
+const ligue1Teams = [
+    {name: "Bayer Leverkusen", gen: 82, logo: '<img src="assets/bundesligaTeams/bayerleverkusen.png" />'}, //done
+    {name: "Bayern Munich", gen: 91, logo: '<img src="assets/bundesligaTeams/bayernmunich.png" />'}, //done
+    {name: "VfB Stuttgart", gen: 81, logo: '<img src="assets/bundesligaTeams/stuttgart.png" />'}, //done
+    {name: "RB Leipzig", gen: 86, logo: '<img src="assets/bundesligaTeams/rbleipzig.png" />'},  //done
+    {name: "Borussia Dortmund", gen: 88, logo: '<img src="assets/bundesligaTeams/borussiadortmund.png" />'}, //done
+    {name: "Eintracht Frankfurt", gen: 82, logo: '<img src="assets/bundesligaTeams/eintrachtfrankfurt.png" />'}, //done
+    {name: "SC Freiburg", gen: 79, logo: '<img src="assets/bundesligaTeams/freiburg.png" />'}, //done
+    {name: "TSG Hoffenheim", gen: 78, logo: '<img src="assets/bundesligaTeams/hoffenheim.png" />'}, //done
+    {name: "FC Augsburg", gen: 76, logo: '<img src="assets/bundesligaTeams/augsburg.png" />'}, //done
+    {name: "VfL Wolfsburg", gen: 80, logo: '<img src="assets/bundesligaTeams/wolfsburg.png" />'}, //done
+    {name: "Borussia Mönchengladbach", gen: 78, logo: '<img src="assets/bundesligaTeams/gladbach.png" />'}, //done
+    {name: "Werder Bremen", gen: 74, logo: '<img src="assets/bundesligaTeams/bremen.png" />'}, //done
+    {name: "1. FC Heidenheim", gen: 73, logo: '<img src="assets/bundesligaTeams/heidenheim.png" />'}, //done
+    {name: "1. FC Union Berlin", gen: 75, logo: '<img src="assets/bundesligaTeams/unionberlin.png" />'},
+    {name: "VfL Bochum", gen: 72, logo: '<img src="assets/bundesligaTeams/bochum.png" />'}, //done
+    {name: "1. FSV Mainz 05", gen: 74, logo: '<img src="assets/bundesligaTeams/mainz.png" />'}, //done
+    {name: "FC St. Pauli", gen: 71, logo: '<img src="assets/bundesligaTeams/stpauli.png" />'}, //done
+    {name: "FC Holstein Kiel", gen: 70, logo: '<img src="assets/bundesligaTeams/kiel.png" />'} //done
+];
+
 // Match simulator team selection
 let team1 = document.getElementById("matchSimulatorTeam1");
 let team2 = document.getElementById("matchSimulatorTeam2");
@@ -230,6 +251,36 @@ document.getElementById("bundesliga").onclick = function () {
   });
 };
 
+// Ligue1 Team Selection
+document.getElementById("ligue1").onclick = function () {
+  const container = document.getElementById("LeagueTeams");
+  container.innerHTML = "";
+
+  document.getElementById("leagueChoiceContainer").style.display = "none";
+  document.getElementById("ChoiceContainer").style.display = "flex";
+
+  ligue1Teams.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = item.logo;
+
+     div.onclick = function () {
+      document.getElementById("ChoiceContainer").style.display = "none"
+             if (currentlySelectedTeam === "team1") {
+                 team1.innerHTML = item.logo;
+                  gen1 = item.gen
+                  name1 = item.name;
+                 document.getElementById("matchSimulatorResult1").innerHTML = item.logo;
+             } else if (currentlySelectedTeam === "team2") {
+                 team2.innerHTML =  item.logo;
+                  gen2 = item.gen
+                  name2 = item.name;
+                 document.getElementById("matchSimulatorResult2").innerHTML = item.logo;
+             }     
+    };
+    container.appendChild(div);
+  });
+};
 
 
 
