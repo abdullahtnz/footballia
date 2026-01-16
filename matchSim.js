@@ -103,7 +103,7 @@ const ligue1Teams = [
     {name: "Le Havre AC", gen: 73, logo: '<img src="assets/ligue1Teams/lehavre.png" />'}, //done
     {name: "Strasbourg", gen: 75, logo: '<img src="assets/ligue1Teams/strasbourg.png" />'}, //done
     {name: "Stade Brestois", gen: 79, logo: '<img src="assets/ligue1Teams/brest.png" />'},// done
-    {name: "FC Lorient", gen: 72, logo: '<img src="assets/ligue1Teams/lorient.png" />'},
+    {name: "FC Lorient", gen: 72, logo: '<img src="assets/ligue1Teams/lorient.png" />'}, //done
     {name: "AJ Auxerre", gen: 71, logo: '<img src="assets/ligue1Teams/auxerre.png" />'},
     {name: "Angers SCO", gen: 70, logo: '<img src="assets/ligue1Teams/angers.png" />'}
 ];
