@@ -109,7 +109,7 @@ const ligue1Teams = [
 ];
 
 const ligaPortugalTeams = [
-    {name: "Benfica", gen: 88, logo: '<img src="assets/ligaPortugal/benfica.png" alt="Benfica" />'},
+    {name: "Benfica", gen: 88, logo: '<img src="assets/ligaPortugal/benfica.png" alt="Benfica" />'}, //done
     {name: "Porto", gen: 82, logo: '<img src="assets/ligaPortugal/porto.png" alt="Porto" />'},
     {name: "Sporting CP", gen: 83, logo: '<img src="assets/ligaPortugal/sporting.png" alt="Sporting CP" />'},
     {name: "Braga", gen: 79, logo: '<img src="assets/ligaPortugal/braga.png" alt="Braga" />'},
