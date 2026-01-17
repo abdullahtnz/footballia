@@ -108,6 +108,27 @@ const ligue1Teams = [
     {name: "Angers SCO", gen: 70, logo: '<img src="assets/ligue1Teams/angers.png" />'} //done
 ];
 
+const ligaPortugalTeams = [
+    {name: "Benfica", gen: 88, logo: '<img src="assets/ligaPortugal/benfica.png" alt="Benfica" />'},
+    {name: "Porto", gen: 82, logo: '<img src="assets/ligaPortugal/porto.png" alt="Porto" />'},
+    {name: "Sporting CP", gen: 83, logo: '<img src="assets/ligaPortugal/sporting.png" alt="Sporting CP" />'},
+    {name: "Braga", gen: 79, logo: '<img src="assets/ligaPortugal/braga.png" alt="Braga" />'},
+    {name: "Vitoria Guimaraes", gen: 77, logo: '<img src="assets/ligaPortugal/vitoriaguimaraes.png" alt="Vitoria Guimaraes" />'},
+    {name: "Boavista", gen: 77, logo: '<img src="assets/ligaPortugal/boavista.png" alt="Boavista" />'},
+    {name: "Famalicao", gen: 76, logo: '<img src="assets/ligaPortugal/famalicao.png" alt="Famalicao" />'},
+    {name: "Casa Pia", gen: 75, logo: '<img src="assets/ligaPortugal/casapia.png" alt="Casa Pia" />'},
+    {name: "Rio Ave", gen: 75, logo: '<img src="assets/ligaPortugal/rioave.png" alt="Rio Ave" />'},
+    {name: "Gil Vicente", gen: 74, logo: '<img src="assets/ligaPortugal/gilvicente.png" alt="Gil Vicente" />'},
+    {name: "Arouca", gen: 73, logo: '<img src="assets/ligaPortugal/arouca.png" alt="Arouca" />'},
+    {name: "Estoril", gen: 73, logo: '<img src="assets/ligaPortugal/estoril.png" alt="Estoril" />'},
+    {name: "Portimonense", gen: 72, logo: '<img src="assets/ligaPortugal/portimonense.png" alt="Portimonense" />'},
+    {name: "Chaves", gen: 71, logo: '<img src="assets/ligaPortugal/chaves.png" alt="Chaves" />'},
+    {name: "Estrela Amadora", gen: 70, logo: '<img src="assets/ligaPortugal/estrelaamadora.png" alt="Estrela Amadora" />'},
+    {name: "Vizela", gen: 69, logo: '<img src="assets/ligaPortugal/vizela.png" alt="Vizela" />'},
+    {name: "Maritimo", gen: 68, logo: '<img src="assets/ligaPortugal/maritimo.png" alt="Maritimo" />'},
+    {name: "Pacos de Ferreira", gen: 67, logo: '<img src="assets/ligaPortugal/pacosdeferreira.png" alt="Pacos de Ferreira" />'}
+]
+
 // Match simulator team selection
 let team1 = document.getElementById("matchSimulatorTeam1");
 let team2 = document.getElementById("matchSimulatorTeam2");
