@@ -105,7 +105,7 @@ const ligue1Teams = [
     {name: "Stade Brestois", gen: 79, logo: '<img src="assets/ligue1Teams/brest.png" />'},// done
     {name: "FC Lorient", gen: 72, logo: '<img src="assets/ligue1Teams/lorient.png" />'}, //done
     {name: "AJ Auxerre", gen: 71, logo: '<img src="assets/ligue1Teams/auxerre.png" />'}, //done
-    {name: "Angers SCO", gen: 70, logo: '<img src="assets/ligue1Teams/angers.png" />'}
+    {name: "Angers SCO", gen: 70, logo: '<img src="assets/ligue1Teams/angers.png" />'} //done
 ];
 
 // Match simulator team selection
@@ -260,6 +260,37 @@ document.getElementById("ligue1").onclick = function () {
   document.getElementById("ChoiceContainer").style.display = "flex";
 
   ligue1Teams.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = item.logo;
+
+     div.onclick = function () {
+      document.getElementById("ChoiceContainer").style.display = "none"
+             if (currentlySelectedTeam === "team1") {
+                 team1.innerHTML = item.logo;
+                  gen1 = item.gen
+                  name1 = item.name;
+                 document.getElementById("matchSimulatorResult1").innerHTML = item.logo;
+             } else if (currentlySelectedTeam === "team2") {
+                 team2.innerHTML =  item.logo;
+                  gen2 = item.gen
+                  name2 = item.name;
+                 document.getElementById("matchSimulatorResult2").innerHTML = item.logo;
+             }     
+    };
+    container.appendChild(div);
+  });
+};
+
+//Liga Portugal Team Selection
+document.getElementById("ligaPortugal").onclick = function () {
+  const container = document.getElementById("LeagueTeams");
+  container.innerHTML = "";
+
+  document.getElementById("leagueChoiceContainer").style.display = "none";
+  document.getElementById("ChoiceContainer").style.display = "flex";
+
+  ligaPortugalTeams.forEach((item) => {
     const div = document.createElement("div");
     div.className = "card";
     div.innerHTML = item.logo;
