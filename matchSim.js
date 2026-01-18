@@ -114,9 +114,9 @@ const ligaPortugalTeams = [
     {name: "Sporting CP", gen: 83, logo: '<img src="assets/ligaPortugal/sporting.png" alt="Sporting CP" />'}, //done
     {name: "Braga", gen: 79, logo: '<img src="assets/ligaPortugal/braga.png" alt="Braga" />'}, //done
     {name: "Vitoria Guimaraes", gen: 75, logo: '<img src="assets/ligaPortugal/vitoriaguimaraes.png" alt="Vitoria Guimaraes" />'}, //done
-    {name: "Boavista", gen: 77, logo: '<img src="assets/ligaPortugal/boavista.png" alt="Boavista" />'},
-    {name: "Famalicao", gen: 76, logo: '<img src="assets/ligaPortugal/famalicao.png" alt="Famalicao" />'},
-    {name: "Casa Pia", gen: 75, logo: '<img src="assets/ligaPortugal/casapia.png" alt="Casa Pia" />'},
+    {name: "Boavista", gen: 77, logo: '<img src="assets/ligaPortugal/boavista.png" alt="Boavista" />'}, //done
+    {name: "Famalicao", gen: 76, logo: '<img src="assets/ligaPortugal/famalicao.png" alt="Famalicao" />'}, //done
+    {name: "Casa Pia", gen: 75, logo: '<img src="assets/ligaPortugal/casapia.png" alt="Casa Pia" />'}, //done
     {name: "Rio Ave", gen: 75, logo: '<img src="assets/ligaPortugal/rioave.png" alt="Rio Ave" />'},
     {name: "Gil Vicente", gen: 74, logo: '<img src="assets/ligaPortugal/gilvicente.png" alt="Gil Vicente" />'},
     {name: "Arouca", gen: 73, logo: '<img src="assets/ligaPortugal/arouca.png" alt="Arouca" />'},
