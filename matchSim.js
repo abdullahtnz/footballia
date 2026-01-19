@@ -121,7 +121,7 @@ const ligaPortugalTeams = [
     {name: "Gil Vicente", gen: 74, logo: '<img src="assets/ligaPortugal/gilvicente.png" alt="Gil Vicente" />'}, //done
     {name: "Arouca", gen: 73, logo: '<img src="assets/ligaPortugal/arouca.png" alt="Arouca" />'}, //done
     {name: "Estoril", gen: 73, logo: '<img src="assets/ligaPortugal/estoril.png" alt="Estoril" />'}, //done
-    {name: "Portimonense", gen: 72, logo: '<img src="assets/ligaPortugal/portimonense.png" alt="Portimonense" />'},
+    {name: "Portimonense", gen: 72, logo: '<img src="assets/ligaPortugal/portimonense.png" alt="Portimonense" />'}, //done
     {name: "Chaves", gen: 71, logo: '<img src="assets/ligaPortugal/chaves.png" alt="Chaves" />'},
     {name: "Estrela Amadora", gen: 70, logo: '<img src="assets/ligaPortugal/estrelaamadora.png" alt="Estrela Amadora" />'},
     {name: "Vizela", gen: 69, logo: '<img src="assets/ligaPortugal/vizela.png" alt="Vizela" />'},
