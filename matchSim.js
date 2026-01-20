@@ -334,6 +334,37 @@ document.getElementById("ligaPortugal").onclick = function () {
   });
 };
 
+// Superlig Team Selection
+document.getElementById("superlig").onclick = function () {
+  const container = document.getElementById("LeagueTeams");
+  container.innerHTML = "";
+
+  document.getElementById("leagueChoiceContainer").style.display = "none";
+  document.getElementById("ChoiceContainer").style.display = "flex";
+
+  superligLeagueTeams.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = item.logo;
+
+     div.onclick = function () {
+      document.getElementById("ChoiceContainer").style.display = "none"
+             if (currentlySelectedTeam === "team1") {
+                 team1.innerHTML = item.logo;
+                  gen1 = item.gen
+                  name1 = item.name;
+                 document.getElementById("matchSimulatorResult1").innerHTML = item.logo;
+             } else if (currentlySelectedTeam === "team2") {
+                 team2.innerHTML =  item.logo;
+                  gen2 = item.gen
+                  name2 = item.name;
+                 document.getElementById("matchSimulatorResult2").innerHTML = item.logo;
+             }     
+    };
+    container.appendChild(div);
+  });
+};
+
 
 
 // Simulation start/results
