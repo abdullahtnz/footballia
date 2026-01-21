@@ -344,7 +344,7 @@ document.getElementById("superlig").onclick = function () {
   document.getElementById("leagueChoiceContainer").style.display = "none";
   document.getElementById("ChoiceContainer").style.display = "flex";
 
-  superligLeagueTeams.forEach((item) => {
+  superLigTeams.forEach((item) => {
     const div = document.createElement("div");
     div.className = "card";
     div.innerHTML = item.logo;
