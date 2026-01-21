@@ -108,25 +108,27 @@ const ligue1Teams = [
     {name: "Angers SCO", gen: 70, logo: '<img src="assets/ligue1Teams/angers.png" />'} //done
 ];
 
-const ligaPortugalTeams = [
-    {name: "Benfica", gen: 88, logo: '<img src="assets/ligaPortugal/benfica.png" alt="Benfica" />'}, //done
-    {name: "Porto", gen: 82, logo: '<img src="assets/ligaPortugal/porto.png" alt="Porto" />'}, //done
-    {name: "Sporting CP", gen: 83, logo: '<img src="assets/ligaPortugal/sporting.png" alt="Sporting CP" />'}, //done
-    {name: "Braga", gen: 79, logo: '<img src="assets/ligaPortugal/braga.png" alt="Braga" />'}, //done
-    {name: "Vitoria Guimaraes", gen: 75, logo: '<img src="assets/ligaPortugal/vitoriaguimaraes.png" alt="Vitoria Guimaraes" />'}, //done
-    {name: "Boavista", gen: 77, logo: '<img src="assets/ligaPortugal/boavista.png" alt="Boavista" />'}, //done
-    {name: "Famalicao", gen: 76, logo: '<img src="assets/ligaPortugal/famalicao.png" alt="Famalicao" />'}, //done
-    {name: "Casa Pia", gen: 75, logo: '<img src="assets/ligaPortugal/casapia.png" alt="Casa Pia" />'}, //done
-    {name: "Rio Ave", gen: 75, logo: '<img src="assets/ligaPortugal/rioave.png" alt="Rio Ave" />'}, //done
-    {name: "Gil Vicente", gen: 74, logo: '<img src="assets/ligaPortugal/gilvicente.png" alt="Gil Vicente" />'}, //done
-    {name: "Arouca", gen: 73, logo: '<img src="assets/ligaPortugal/arouca.png" alt="Arouca" />'}, //done
-    {name: "Estoril", gen: 73, logo: '<img src="assets/ligaPortugal/estoril.png" alt="Estoril" />'}, //done
-    {name: "Portimonense", gen: 72, logo: '<img src="assets/ligaPortugal/portimonense.png" alt="Portimonense" />'}, //done
-    {name: "Chaves", gen: 71, logo: '<img src="assets/ligaPortugal/chaves.png" alt="Chaves" />'},//done
-    {name: "Estrela Amadora", gen: 70, logo: '<img src="assets/ligaPortugal/estrelaamadora.png" alt="Estrela Amadora" />'}, //done
-    {name: "Vizela", gen: 69, logo: '<img src="assets/ligaPortugal/vizela.png" alt="Vizela" />'}, //done
-    {name: "Maritimo", gen: 68, logo: '<img src="assets/ligaPortugal/maritimo.png" alt="Maritimo" />'}, //done
-    {name: "Pacos de Ferreira", gen: 67, logo: '<img src="assets/ligaPortugal/pacosdeferreira.png" alt="Pacos de Ferreira" />'} //done
+const superLigTeams = [
+    {name: "Galatasaray", gen: 84, logo: '<img src="assets/superLig/galatasaray.png" alt="Galatasaray" />'},
+    {name: "Fenerbahce", gen: 83, logo: '<img src="assets/superLig/fenerbahce.png" alt="Fenerbahce" />'},
+    {name: "Besiktas", gen: 80, logo: '<img src="assets/superLig/besiktas.png" alt="Besiktas" />'},
+    {name: "Trabzonspor", gen: 78, logo: '<img src="assets/superLig/trabzonspor.png" alt="Trabzonspor" />'},
+    {name: "Basaksehir", gen: 76, logo: '<img src="assets/superLig/basaksehir.png" alt="Basaksehir" />'},
+    {name: "Rizespor", gen: 75, logo: '<img src="assets/superLig/rizespor.png" alt="Rizespor" />'},
+    {name: "Sivasspor", gen: 75, logo: '<img src="assets/superLig/sivasspor.png" alt="Sivasspor" />'},
+    {name: "Alanyaspor", gen: 74, logo: '<img src="assets/superLig/alanyaspor.png" alt="Alanyaspor" />'},
+    {name: "Antalyaspor", gen: 74, logo: '<img src="assets/superLig/antalyaspor.png" alt="Antalyaspor" />'},
+    {name: "Konyaspor", gen: 74, logo: '<img src="assets/superLig/konyaspor.png" alt="Konyaspor" />'},
+    {name: "Kayserispor", gen: 73, logo: '<img src="assets/superLig/kayserispor.png" alt="Kayserispor" />'},
+    {name: "Adana Demirspor", gen: 66, logo: '<img src="assets/superLig/adanademirspor.png" alt="Adana Demirspor" />'},
+    {name: "Gaziantep", gen: 73, logo: '<img src="assets/superLig/gaziantep.png" alt="Gaziantep" />'},
+    {name: "Hatayspor", gen: 65, logo: '<img src="assets/superLig/hatayspor.png" alt="Hatayspor" />'},
+    {name: "Kasimpasa", gen: 71, logo: '<img src="assets/superLig/kasimpasa.png" alt="Kasimpasa" />'},
+    {name: "Samsunspor", gen: 70, logo: '<img src="assets/superLig/samsunspor.png" alt="Samsunspor" />'},
+    {name: "Ankaragucu", gen: 70, logo: '<img src="assets/superLig/ankaragucu.png" alt="Ankaragucu" />'},
+    {name: "Karagumruk", gen: 69, logo: '<img src="assets/superLig/karagumruk.png" alt="Karagumruk" />'},
+    {name: "Pendikspor", gen: 68, logo: '<img src="assets/superLig/pendikspor.png" alt="Pendikspor" />'},
+    {name: "Bodrumspor", gen: 69, logo: '<img src="assets/superLig/bodrumspor.png" alt="Bodrumspor" />'}
 ]
 
 // Match simulator team selection
