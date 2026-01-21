@@ -109,12 +109,12 @@ const ligue1Teams = [
 ];
 
 const superLigTeams = [
-    {name: "Galatasaray", gen: 84, logo: '<img src="assets/superLig/galatasaray.png" alt="Galatasaray" />'},
-    {name: "Fenerbahce", gen: 83, logo: '<img src="assets/superLig/fenerbahce.png" alt="Fenerbahce" />'},
-    {name: "Besiktas", gen: 80, logo: '<img src="assets/superLig/besiktas.png" alt="Besiktas" />'},
-    {name: "Trabzonspor", gen: 78, logo: '<img src="assets/superLig/trabzonspor.png" alt="Trabzonspor" />'},
-    {name: "Basaksehir", gen: 76, logo: '<img src="assets/superLig/basaksehir.png" alt="Basaksehir" />'},
-    {name: "Rizespor", gen: 75, logo: '<img src="assets/superLig/rizespor.png" alt="Rizespor" />'},
+    {name: "Galatasaray", gen: 84, logo: '<img src="assets/superLig/galatasaray.png" alt="Galatasaray" />'},//done
+    {name: "Fenerbahce", gen: 83, logo: '<img src="assets/superLig/fenerbahce.png" alt="Fenerbahce" />'},//done
+    {name: "Besiktas", gen: 80, logo: '<img src="assets/superLig/besiktas.png" alt="Besiktas" />'},//done
+    {name: "Trabzonspor", gen: 78, logo: '<img src="assets/superLig/trabzonspor.png" alt="Trabzonspor" />'},//
+    {name: "Basaksehir", gen: 76, logo: '<img src="assets/superLig/basaksehir.png" alt="Basaksehir" />'},//
+    {name: "Rizespor", gen: 75, logo: '<img src="assets/superLig/rizespor.png" alt="Rizespor" />'},//
     {name: "Sivasspor", gen: 75, logo: '<img src="assets/superLig/sivasspor.png" alt="Sivasspor" />'},
     {name: "Alanyaspor", gen: 74, logo: '<img src="assets/superLig/alanyaspor.png" alt="Alanyaspor" />'},
     {name: "Antalyaspor", gen: 74, logo: '<img src="assets/superLig/antalyaspor.png" alt="Antalyaspor" />'},
