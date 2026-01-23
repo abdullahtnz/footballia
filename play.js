@@ -24,6 +24,7 @@ let a = 6
 console.log(a)
 let b = a*5
 console.log(b)
+console.log("yea")
 // these are for commit purposes.
 
 
