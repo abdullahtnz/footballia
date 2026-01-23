@@ -20,6 +20,11 @@ matchSimulatorBack.onclick = function() {
     
 }
 
+let a = 6
+console.log(a)
+
+
+
 // const startLine = document.getElementById("startLine")
 // startLine.onclick = function(){
 //     document.getElementById('modeChoiceContainer').style.display = 'none';
