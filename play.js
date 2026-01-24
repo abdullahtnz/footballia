@@ -28,6 +28,7 @@ console.log("yea")
 console.log(a+b)
 var x = "test"
 console.log(x)
+console.log(x+x)
 // these are for commit purposes.
 
 
