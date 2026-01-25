@@ -115,10 +115,10 @@ const superLigTeams = [
     {name: "Trabzonspor", gen: 78, logo: '<img src="assets/superLig/trabzonspor.png" alt="Trabzonspor" />'},//done
     {name: "Basaksehir", gen: 76, logo: '<img src="assets/superLig/basaksehir.png" alt="Basaksehir" />'},//done
     {name: "Rizespor", gen: 75, logo: '<img src="assets/superLig/rizespor.png" alt="Rizespor" />'},//done
-    {name: "Sivasspor", gen: 75, logo: '<img src="assets/superLig/sivasspor.png" alt="Sivasspor" />'},
-    {name: "Alanyaspor", gen: 74, logo: '<img src="assets/superLig/alanyaspor.png" alt="Alanyaspor" />'},
-    {name: "Antalyaspor", gen: 74, logo: '<img src="assets/superLig/antalyaspor.png" alt="Antalyaspor" />'},
-    {name: "Konyaspor", gen: 74, logo: '<img src="assets/superLig/konyaspor.png" alt="Konyaspor" />'},
+    {name: "Sivasspor", gen: 75, logo: '<img src="assets/superLig/sivasspor.png" alt="Sivasspor" />'}, //done
+    {name: "Alanyaspor", gen: 74, logo: '<img src="assets/superLig/alanyaspor.png" alt="Alanyaspor" />'}, //done
+    {name: "Antalyaspor", gen: 74, logo: '<img src="assets/superLig/antalyaspor.png" alt="Antalyaspor" />'}, //done
+    {name: "Konyaspor", gen: 74, logo: '<img src="assets/superLig/konyaspor.png" alt="Konyaspor" />'}, //done
     {name: "Kayserispor", gen: 73, logo: '<img src="assets/superLig/kayserispor.png" alt="Kayserispor" />'},
     {name: "Adana Demirspor", gen: 66, logo: '<img src="assets/superLig/adanademirspor.png" alt="Adana Demirspor" />'},
     {name: "Gaziantep", gen: 73, logo: '<img src="assets/superLig/gaziantep.png" alt="Gaziantep" />'},
@@ -126,7 +126,7 @@ const superLigTeams = [
     {name: "Kasimpasa", gen: 71, logo: '<img src="assets/superLig/kasimpasa.png" alt="Kasimpasa" />'},
     {name: "Samsunspor", gen: 70, logo: '<img src="assets/superLig/samsunspor.png" alt="Samsunspor" />'},
     {name: "Ankaragucu", gen: 70, logo: '<img src="assets/superLig/ankaragucu.png" alt="Ankaragucu" />'},
-    {name: "Karagumruk", gen: 69, logo: '<img src="assets/superLig/karagumruk.png" alt="Karagumruk" />'},
+    {name: "Karagumruk", gen: 69, logo: '<img src="assets/superLig/karagumruk.png" alt="Karagumruk" />'}, //done
     {name: "Pendikspor", gen: 68, logo: '<img src="assets/superLig/pendikspor.png" alt="Pendikspor" />'}, //done
     {name: "Bodrumspor", gen: 69, logo: '<img src="assets/superLig/bodrumspor.png" alt="Bodrumspor" />'} //done
 ]
