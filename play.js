@@ -20,6 +20,19 @@ matchSimulatorBack.onclick = function() {
     
 }
 
+let a = 6
+console.log(a)
+let b = a*5
+console.log(b)
+console.log("yea")
+console.log(a+b)
+var x = "test"
+console.log(x)
+console.log(x+x)
+// these are for commit purposes.
+
+
+
 // const startLine = document.getElementById("startLine")
 // startLine.onclick = function(){
 //     document.getElementById('modeChoiceContainer').style.display = 'none';

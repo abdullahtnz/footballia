@@ -127,8 +127,8 @@ const superLigTeams = [
     {name: "Samsunspor", gen: 70, logo: '<img src="assets/superLig/samsunspor.png" alt="Samsunspor" />'},
     {name: "Ankaragucu", gen: 70, logo: '<img src="assets/superLig/ankaragucu.png" alt="Ankaragucu" />'},
     {name: "Karagumruk", gen: 69, logo: '<img src="assets/superLig/karagumruk.png" alt="Karagumruk" />'},
-    {name: "Pendikspor", gen: 68, logo: '<img src="assets/superLig/pendikspor.png" alt="Pendikspor" />'},
-    {name: "Bodrumspor", gen: 69, logo: '<img src="assets/superLig/bodrumspor.png" alt="Bodrumspor" />'}
+    {name: "Pendikspor", gen: 68, logo: '<img src="assets/superLig/pendikspor.png" alt="Pendikspor" />'}, //done
+    {name: "Bodrumspor", gen: 69, logo: '<img src="assets/superLig/bodrumspor.png" alt="Bodrumspor" />'} //done
 ]
 
 // Match simulator team selection
