@@ -120,8 +120,8 @@ const superLigTeams = [
     {name: "Antalyaspor", gen: 74, logo: '<img src="assets/superLig/antalyaspor.png" alt="Antalyaspor" />'}, //done
     {name: "Konyaspor", gen: 74, logo: '<img src="assets/superLig/konyaspor.png" alt="Konyaspor" />'}, //done
     {name: "Kayserispor", gen: 73, logo: '<img src="assets/superLig/kayserispor.png" alt="Kayserispor" />'},
-    {name: "Adana Demirspor", gen: 66, logo: '<img src="assets/superLig/adanademirspor.png" alt="Adana Demirspor" />'},
-    {name: "Gaziantep", gen: 73, logo: '<img src="assets/superLig/gaziantep.png" alt="Gaziantep" />'},
+    {name: "Adana Demirspor", gen: 66, logo: '<img src="assets/superLig/adanademirspor.png" alt="Adana Demirspor" />'}, //done
+    {name: "Gaziantep", gen: 73, logo: '<img src="assets/superLig/gaziantep.png" alt="Gaziantep" />'}, .//done
     {name: "Hatayspor", gen: 65, logo: '<img src="assets/superLig/hatayspor.png" alt="Hatayspor" />'},
     {name: "Kasimpasa", gen: 71, logo: '<img src="assets/superLig/kasimpasa.png" alt="Kasimpasa" />'},
     {name: "Samsunspor", gen: 70, logo: '<img src="assets/superLig/samsunspor.png" alt="Samsunspor" />'},
