@@ -122,10 +122,10 @@ const superLigTeams = [
     {name: "Kayserispor", gen: 73, logo: '<img src="assets/superLig/kayserispor.png" alt="Kayserispor" />'},
     {name: "Adana Demirspor", gen: 66, logo: '<img src="assets/superLig/adanademirspor.png" alt="Adana Demirspor" />'}, //done
     {name: "Gaziantep", gen: 73, logo: '<img src="assets/superLig/gaziantep.png" alt="Gaziantep" />'}, //done
-    {name: "Hatayspor", gen: 65, logo: '<img src="assets/superLig/hatayspor.png" alt="Hatayspor" />'},
-    {name: "Kasimpasa", gen: 71, logo: '<img src="assets/superLig/kasimpasa.png" alt="Kasimpasa" />'},
-    {name: "Samsunspor", gen: 70, logo: '<img src="assets/superLig/samsunspor.png" alt="Samsunspor" />'},
-    {name: "Ankaragucu", gen: 70, logo: '<img src="assets/superLig/ankaragucu.png" alt="Ankaragucu" />'},
+    {name: "Hatayspor", gen: 65, logo: '<img src="assets/superLig/hatayspor.png" alt="Hatayspor" />'},//done
+    {name: "Kasimpasa", gen: 71, logo: '<img src="assets/superLig/kasimpasa.png" alt="Kasimpasa" />'},//done
+    {name: "Samsunspor", gen: 70, logo: '<img src="assets/superLig/samsunspor.png" alt="Samsunspor" />'},//done
+    {name: "Ankaragucu", gen: 70, logo: '<img src="assets/superLig/ankaragucu.png" alt="Ankaragucu" />'},//done
     {name: "Karagumruk", gen: 69, logo: '<img src="assets/superLig/karagumruk.png" alt="Karagumruk" />'}, //done
     {name: "Pendikspor", gen: 68, logo: '<img src="assets/superLig/pendikspor.png" alt="Pendikspor" />'}, //done
     {name: "Bodrumspor", gen: 69, logo: '<img src="assets/superLig/bodrumspor.png" alt="Bodrumspor" />'} //done
@@ -345,6 +345,36 @@ document.getElementById("superlig").onclick = function () {
   document.getElementById("ChoiceContainer").style.display = "flex";
 
   superLigTeams.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = item.logo;
+
+     div.onclick = function () {
+      document.getElementById("ChoiceContainer").style.display = "none"
+             if (currentlySelectedTeam === "team1") {
+                 team1.innerHTML = item.logo;
+                  gen1 = item.gen
+                  name1 = item.name;
+                 document.getElementById("matchSimulatorResult1").innerHTML = item.logo;
+             } else if (currentlySelectedTeam === "team2") {
+                 team2.innerHTML =  item.logo;
+                  gen2 = item.gen
+                  name2 = item.name;
+                 document.getElementById("matchSimulatorResult2").innerHTML = item.logo;
+             }     
+    };
+    container.appendChild(div);
+  });
+};
+
+document.getElementById("misli").onclick = function () {
+  const container = document.getElementById("LeagueTeams");
+  container.innerHTML = "";
+
+  document.getElementById("leagueChoiceContainer").style.display = "none";
+  document.getElementById("ChoiceContainer").style.display = "flex";
+
+  misliTeams.forEach((item) => {
     const div = document.createElement("div");
     div.className = "card";
     div.innerHTML = item.logo;
