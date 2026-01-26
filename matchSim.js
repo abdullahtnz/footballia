@@ -131,6 +131,19 @@ const superLigTeams = [
     {name: "Bodrumspor", gen: 69, logo: '<img src="assets/superLig/bodrumspor.png" alt="Bodrumspor" />'} //done
 ]
 
+const azerbaijaniPremierLeagueTeams = [
+    {name: "Qarabağ", gen: 78, logo: '<img src="assets/azerbaijan/qarabag.png" alt="Qarabağ" />'},
+    {name: "Neftçi", gen: 71, logo: '<img src="assets/azerbaijan/neftci.png" alt="Neftçi" />'},
+    {name: "Zirə", gen: 69, logo: '<img src="assets/azerbaijan/zire.png" alt="Zirə" />'},
+    {name: "Sabah", gen: 68, logo: '<img src="assets/azerbaijan/sabah.png" alt="Sabah" />'},
+    {name: "Sumqayıt", gen: 66, logo: '<img src="assets/azerbaijan/sumqayit.png" alt="Sumqayıt" />'},
+    {name: "Səbail", gen: 65, logo: '<img src="assets/azerbaijan/sebail.png" alt="Səbail" />'},
+    {name: "Turan-Tovuz", gen: 64, logo: '<img src="assets/azerbaijan/turan.png" alt="Turan-Tovuz" />'},
+    {name: "Kəpəz", gen: 63, logo: '<img src="assets/azerbaijan/kepez.png" alt="Kəpəz" />'},
+    {name: "Araz-Naxçıvan", gen: 62, logo: '<img src="assets/azerbaijan/araz.png" alt="Araz-Naxçıvan" />'},
+    {name: "Qəbələ", gen: 65, logo: '<img src="assets/azerbaijan/qebele.png" alt="Qəbələ" />'}
+]
+
 // Match simulator team selection
 let team1 = document.getElementById("matchSimulatorTeam1");
 let team2 = document.getElementById("matchSimulatorTeam2");
