@@ -132,7 +132,7 @@ const superLigTeams = [
 ]
 
 const azerbaijaniPremierLeagueTeams = [
-    {name: "Qarabağ", gen: 78, logo: '<img src="assets/azerbaijan/qarabag.png" alt="Qarabağ" />'},
+    {name: "Qarabağ", gen: 78, logo: '<img src="assets/azerbaijan/qarabag.png" alt="Qarabağ" />'}, //done
     {name: "Neftçi", gen: 71, logo: '<img src="assets/azerbaijan/neftci.png" alt="Neftçi" />'},
     {name: "Zirə", gen: 69, logo: '<img src="assets/azerbaijan/zire.png" alt="Zirə" />'},
     {name: "Sabah", gen: 68, logo: '<img src="assets/azerbaijan/sabah.png" alt="Sabah" />'},
