@@ -133,9 +133,9 @@ const superLigTeams = [
 
 const azerbaijaniPremierLeagueTeams = [
     {name: "Qarabağ", gen: 78, logo: '<img src="assets/azerbaijan/qarabag.png" alt="Qarabağ" />'}, //done
-    {name: "Neftçi", gen: 71, logo: '<img src="assets/azerbaijan/neftci.png" alt="Neftçi" />'},
-    {name: "Zirə", gen: 69, logo: '<img src="assets/azerbaijan/zire.png" alt="Zirə" />'},
-    {name: "Sabah", gen: 68, logo: '<img src="assets/azerbaijan/sabah.png" alt="Sabah" />'},
+    {name: "Neftçi", gen: 71, logo: '<img src="assets/azerbaijan/neftci.png" alt="Neftçi" />'},//done
+    {name: "Zirə", gen: 69, logo: '<img src="assets/azerbaijan/zire.png" alt="Zirə" />'},//done
+    {name: "Sabah", gen: 68, logo: '<img src="assets/azerbaijan/sabah.png" alt="Sabah" />'},//done
     {name: "Sumqayıt", gen: 66, logo: '<img src="assets/azerbaijan/sumqayit.png" alt="Sumqayıt" />'},
     {name: "Səbail", gen: 65, logo: '<img src="assets/azerbaijan/sebail.png" alt="Səbail" />'},
     {name: "Turan-Tovuz", gen: 64, logo: '<img src="assets/azerbaijan/turan.png" alt="Turan-Tovuz" />'},
