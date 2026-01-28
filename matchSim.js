@@ -108,6 +108,27 @@ const ligue1Teams = [
     {name: "Angers SCO", gen: 70, logo: '<img src="assets/ligue1Teams/angers.png" />'} //done
 ];
 
+const ligaPortugalTeams = [
+{name: "Benfica", gen: 81, logo: '<img src="assets/ligaportugalTeams/benfica.png" />'},
+{name: "Porto", gen: 83, logo: '<img src="assets/ligaportugalTeams/porto.png" />'},
+{name: "Sporting CP", gen: 83, logo: '<img src="assets/ligaportugalTeams/sporting.png" />'},
+{name: "Braga", gen: 78, logo: '<img src="assets/ligaportugalTeams/braga.png" />'},
+{name: "Vitória SC", gen: 74, logo: '<img src="assets/ligaportugalTeams/vitoriaguimaraes.png" />'},
+{name: "Boavista", gen: 71, logo: '<img src="assets/ligaportugalTeams/boavista.png" />'},
+{name: "Famalicão", gen: 71, logo: '<img src="assets/ligaportugalTeams/famalicao.png" />'},
+{name: "Estoril Praia", gen: 72, logo: '<img src="assets/ligaportugalTeams/estoril.png" />'},
+{name: "Arouca", gen: 71, logo: '<img src="assets/ligaportugalTeams/arouca.png" />'},
+{name: "Rio Ave", gen: 73, logo: '<img src="assets/ligaportugalTeams/rioave.png" />'},
+{name: "Moreirense", gen: 71, logo: '<img src="assets/ligaportugalTeams/moreirense.png" />'},
+{name: "Gil Vicente", gen: 70, logo: '<img src="assets/ligaportugalTeams/gilvicente.png" />'},
+{name: "Casa Pia", gen: 69, logo: '<img src="assets/ligaportugalTeams/casapia.png" />'},
+{name: "Portimonense", gen: 69, logo: '<img src="assets/ligaportugalTeams/portimonense.png" />'},
+{name: "Estrela da Amadora", gen: 68, logo: '<img src="assets/ligaportugalTeams/estrelaamadora.png" />'},
+{name: "Farense", gen: 67, logo: '<img src="assets/ligaportugalTeams/farense.png" />'},
+{name: "Nacional", gen: 66, logo: '<img src="assets/ligaportugalTeams/nacional.png" />'},
+{name: "Marítimo", gen: 65, logo: '<img src="assets/ligaportugalTeams/maritimo.png" />'}
+];
+
 const superLigTeams = [
     {name: "Galatasaray", gen: 84, logo: '<img src="assets/superLig/galatasaray.png" alt="Galatasaray" />'},//done
     {name: "Fenerbahce", gen: 83, logo: '<img src="assets/superLig/fenerbahce.png" alt="Fenerbahce" />'},//done
