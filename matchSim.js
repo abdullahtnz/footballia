@@ -387,7 +387,7 @@ document.getElementById("misli").onclick = function () {
   document.getElementById("leagueChoiceContainer").style.display = "none";
   document.getElementById("ChoiceContainer").style.display = "flex";
 
-  misliTeams.forEach((item) => {
+  azerbaijaniPremierLeagueTeams.forEach((item) => {
     const div = document.createElement("div");
     div.className = "card";
     div.innerHTML = item.logo;
