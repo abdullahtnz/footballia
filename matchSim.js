@@ -160,7 +160,7 @@ const azerbaijaniPremierLeagueTeams = [
     {name: "Sumqayıt", gen: 66, logo: '<img src="assets/azerbaijan/sumqayit.png" alt="Sumqayıt" />'},
     {name: "Səbail", gen: 65, logo: '<img src="assets/azerbaijan/sebail.png" alt="Səbail" />'},
     {name: "Turan-Tovuz", gen: 64, logo: '<img src="assets/azerbaijan/turan.png" alt="Turan-Tovuz" />'},
-    {name: "Kəpəz", gen: 63, logo: '<img src="assets/azerbaijan/kepez.png" alt="Kəpəz" />'},
+    {name: "Kəpəz", gen: 63, logo: '<img src="assets/azerbaijan/kepez.png" alt="Kəpəz" />'}, //done
     {name: "Araz-Naxçıvan", gen: 62, logo: '<img src="assets/azerbaijan/araz.png" alt="Araz-Naxçıvan" />'},
     {name: "Qəbələ", gen: 65, logo: '<img src="assets/azerbaijan/qebele.png" alt="Qəbələ" />'}
 ]
