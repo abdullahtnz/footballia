@@ -31,6 +31,8 @@ console.log(x)
 console.log(x+x)
 let c = 56
 console.log(c)
+let baba = c + a
+console.log(baba)
 // these are for commit purposes.
 
 
