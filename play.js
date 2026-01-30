@@ -29,6 +29,8 @@ console.log(a+b)
 var x = "test"
 console.log(x)
 console.log(x+x)
+let c = 56
+console.log(c)
 // these are for commit purposes.
 
 
