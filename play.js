@@ -33,6 +33,8 @@ let c = 56
 console.log(c)
 let baba = c + a
 console.log(baba)
+let say = "yeah"
+console.log(say)
 // these are for commit purposes.
 
 
