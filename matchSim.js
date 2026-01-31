@@ -164,6 +164,10 @@ const azerbaijaniPremierLeagueTeams = [
     {name: "Qəbələ", gen: 65, logo: '<img src="assets/azerbaijan/qebele.png" alt="Qəbələ" />'}
 ]
 
+const eredivisieTeams = [
+    
+]
+
 // Match simulator team selection
 let team1 = document.getElementById("matchSimulatorTeam1");
 let team2 = document.getElementById("matchSimulatorTeam2");
