@@ -689,6 +689,7 @@ document.getElementById("matchSimulatorStart").onclick = function(){
 
     const highWinScores =[]
     const lowWinScores = []
+    
 
     const winScores =  [
                             "1-0", "2-0", "2-1", "3-0", "3-1", "3-2", "4-0",  
