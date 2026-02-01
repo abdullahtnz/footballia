@@ -165,7 +165,24 @@ const azerbaijaniPremierLeagueTeams = [
 ]
 
 const eredivisieTeams = [
-    
+    {name: "Ajax", gen: 81, logo: '<img src="assets/eredivisie/ajax.png" alt="Ajax" />'},
+    {name: "PSV", gen: 79, logo: '<img src="assets/eredivisie/psv.png" alt="PSV" />'},
+    {name: "Feyenoord", gen: 77, logo: '<img src="assets/eredivisie/feyenoord.png" alt="Feyenoord" />'},
+    {name: "AZ Alkmaar", gen: 76, logo: '<img src="assets/eredivisie/az.png" alt="AZ Alkmaar" />'},
+    {name: "FC Twente", gen: 75, logo: '<img src="assets/eredivisie/twente.png" alt="FC Twente" />'},
+    {name: "FC Utrecht", gen: 73, logo: '<img src="assets/eredivisie/utrecht.png" alt="FC Utrecht" />'},
+    {name: "Sparta Rotterdam", gen: 71, logo: '<img src="assets/eredivisie/sparta.png" alt="Sparta Rotterdam" />'},
+    {name: "Heerenveen", gen: 71, logo: '<img src="assets/eredivisie/heerenveen.png" alt="Heerenveen" />'},
+    {name: "NEC Nijmegen", gen: 70, logo: '<img src="assets/eredivisie/nec.png" alt="NEC Nijmegen" />'},
+    {name: "Go Ahead Eagles", gen: 69, logo: '<img src="assets/eredivisie/goahead.png" alt="Go Ahead Eagles" />'},
+    {name: "Fortuna Sittard", gen: 69, logo: '<img src="assets/eredivisie/fortuna.png" alt="Fortuna Sittard" />'},
+    {name: "PEC Zwolle", gen: 68, logo: '<img src="assets/eredivisie/zwolle.png" alt="PEC Zwolle" />'},
+    {name: "Almere City", gen: 67, logo: '<img src="assets/eredivisie/almere.png" alt="Almere City" />'},
+    {name: "RKC Waalwijk", gen: 67, logo: '<img src="assets/eredivisie/rkc.png" alt="RKC Waalwijk" />'},
+    {name: "Heracles Almelo", gen: 66, logo: '<img src="assets/eredivisie/heracles.png" alt="Heracles Almelo" />'},
+    {name: "Excelsior", gen: 65, logo: '<img src="assets/eredivisie/excelsior.png" alt="Excelsior" />'},
+    {name: "FC Volendam", gen: 65, logo: '<img src="assets/eredivisie/volendam.png" alt="FC Volendam" />'},
+    {name: "Vitesse", gen: 68, logo: '<img src="assets/eredivisie/vitesse.png" alt="Vitesse" />'}
 ]
 
 // Match simulator team selection
@@ -404,6 +421,7 @@ document.getElementById("superlig").onclick = function () {
   });
 };
 
+//Azerbaijani leauge team selection
 document.getElementById("misli").onclick = function () {
   const container = document.getElementById("LeagueTeams");
   container.innerHTML = "";
@@ -412,6 +430,38 @@ document.getElementById("misli").onclick = function () {
   document.getElementById("ChoiceContainer").style.display = "flex";
 
   azerbaijaniPremierLeagueTeams.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = item.logo;
+
+     div.onclick = function () {
+      document.getElementById("ChoiceContainer").style.display = "none"
+             if (currentlySelectedTeam === "team1") {
+                 team1.innerHTML = item.logo;
+                  gen1 = item.gen
+                  name1 = item.name;
+                 document.getElementById("matchSimulatorResult1").innerHTML = item.logo;
+             } else if (currentlySelectedTeam === "team2") {
+                 team2.innerHTML =  item.logo;
+                  gen2 = item.gen
+                  name2 = item.name;
+                 document.getElementById("matchSimulatorResult2").innerHTML = item.logo;
+             }     
+    };
+    container.appendChild(div);
+  });
+};
+
+//Eredivisie Team Selection
+
+document.getElementById("eredivisie").onclick = function () {
+  const container = document.getElementById("LeagueTeams");
+  container.innerHTML = "";
+
+  document.getElementById("leagueChoiceContainer").style.display = "none";
+  document.getElementById("ChoiceContainer").style.display = "flex";
+
+  eredivisieTeams.forEach((item) => {
     const div = document.createElement("div");
     div.className = "card";
     div.innerHTML = item.logo;
