@@ -168,7 +168,7 @@ const eredivisieTeams = [
     {name: "Ajax", gen: 81, logo: '<img src="assets/eredivisie/ajax.png" alt="Ajax" />'},
     {name: "PSV", gen: 79, logo: '<img src="assets/eredivisie/psv.png" alt="PSV" />'},
     {name: "Feyenoord", gen: 77, logo: '<img src="assets/eredivisie/feyenoord.png" alt="Feyenoord" />'},
-    {name: "AZ Alkmaar", gen: 76, logo: '<img src="assets/eredivisie/az.png" alt="AZ Alkmaar" />'},
+    {name: "AZ Alkmaar", gen: 76, logo: '<img src="assets/eredivisie/az.png" alt="AZ Alkmaar" />'}, //done
     {name: "FC Twente", gen: 75, logo: '<img src="assets/eredivisie/twente.png" alt="FC Twente" />'},
     {name: "FC Utrecht", gen: 73, logo: '<img src="assets/eredivisie/utrecht.png" alt="FC Utrecht" />'},
     {name: "Sparta Rotterdam", gen: 71, logo: '<img src="assets/eredivisie/sparta.png" alt="Sparta Rotterdam" />'},
