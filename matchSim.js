@@ -175,7 +175,7 @@ const eredivisieTeams = [
     {name: "Heerenveen", gen: 71, logo: '<img src="assets/eredivisie/heerenveen.png" alt="Heerenveen" />'},
     {name: "NEC Nijmegen", gen: 70, logo: '<img src="assets/eredivisie/nec.png" alt="NEC Nijmegen" />'},
     {name: "Go Ahead Eagles", gen: 69, logo: '<img src="assets/eredivisie/goahead.png" alt="Go Ahead Eagles" />'},
-    {name: "Fortuna Sittard", gen: 69, logo: '<img src="assets/eredivisie/fortuna.png" alt="Fortuna Sittard" />'},
+    {name: "Fortuna Sittard", gen: 69, logo: '<img src="assets/eredivisie/fortuna.png" alt="Fortuna Sittard" />'}, 
     {name: "PEC Zwolle", gen: 68, logo: '<img src="assets/eredivisie/zwolle.png" alt="PEC Zwolle" />'},
     {name: "Almere City", gen: 67, logo: '<img src="assets/eredivisie/almere.png" alt="Almere City" />'},
     {name: "RKC Waalwijk", gen: 67, logo: '<img src="assets/eredivisie/rkc.png" alt="RKC Waalwijk" />'},
