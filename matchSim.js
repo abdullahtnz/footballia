@@ -185,6 +185,8 @@ const eredivisieTeams = [
     {name: "Vitesse", gen: 68, logo: '<img src="assets/eredivisie/vitesse.png" alt="Vitesse" />'}
 ]
 
+const mlsTeams = []
+
 // Match simulator team selection
 let team1 = document.getElementById("matchSimulatorTeam1");
 let team2 = document.getElementById("matchSimulatorTeam2");
@@ -484,6 +486,37 @@ document.getElementById("eredivisie").onclick = function () {
   });
 };
 
+// mls Team Selection
+document.getElementById("mls").onclick = function () {
+  const container = document.getElementById("LeagueTeams");
+  container.innerHTML = "";
+
+  document.getElementById("leagueChoiceContainer").style.display = "none";
+  document.getElementById("ChoiceContainer").style.display = "flex";
+
+  mlsTeams.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = item.logo;
+
+     div.onclick = function () {
+      document.getElementById("ChoiceContainer").style.display = "none"
+             if (currentlySelectedTeam === "team1") {
+                 team1.innerHTML = item.logo;
+                  gen1 = item.gen
+                  name1 = item.name;
+                 document.getElementById("matchSimulatorResult1").innerHTML = item.logo;
+             } else if (currentlySelectedTeam === "team2") {
+                 team2.innerHTML =  item.logo;
+                  gen2 = item.gen
+                  name2 = item.name;
+                 document.getElementById("matchSimulatorResult2").innerHTML = item.logo;
+             }     
+    };
+    container.appendChild(div);
+  });
+};
+
 
 
 // Simulation start/results
@@ -721,7 +754,7 @@ document.getElementById("matchSimulatorStart").onclick = function(){
             draw = probabilityArray.filter(item => item === 0).length;
             break;
         case 30: 
-            probabilityArray = [1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+            probabilityArray = [1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1]
             result = probabilityArray[Math.floor(Math.random() * 100)];
             prob1 = probabilityArray.filter(item => item === 1).length;
             prob2 = probabilityArray.filter(item => item === 2).length;
