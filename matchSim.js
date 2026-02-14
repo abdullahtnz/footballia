@@ -185,7 +185,36 @@ const eredivisieTeams = [
     {name: "Vitesse", gen: 68, logo: '<img src="assets/eredivisie/vitesse.png" alt="Vitesse" />'}
 ]
 
-const mlsTeams = []
+const mlsTeams = [
+    {name: "Inter Miami CF", gen: 71, logo: '<img src="assets/mls/intermiami.png" alt="Inter Miami CF" />'},
+    {name: "LAFC", gen: 70, logo: '<img src="assets/mls/lafc.png" alt="LAFC" />'},
+    {name: "Columbus Crew", gen: 70, logo: '<img src="assets/mls/columbus.png" alt="Columbus Crew" />'},
+    {name: "FC Cincinnati", gen: 67, logo: '<img src="assets/mls/cincinnati.png" alt="FC Cincinnati" />'},
+    {name: "Philadelphia Union", gen: 66, logo: '<img src="assets/mls/philadelphia.png" alt="Philadelphia Union" />'},
+    {name: "New England Revolution", gen: 66, logo: '<img src="assets/mls/revolution.png" alt="New England Revolution" />'},
+    {name: "Seattle Sounders FC", gen: 64, logo: '<img src="assets/mls/sounders.png" alt="Seattle Sounders FC" />'},
+    {name: "St. Louis City SC", gen: 64, logo: '<img src="assets/mls/stlouis.png" alt="St. Louis City SC" />'},
+    {name: "Orlando City SC", gen: 63, logo: '<img src="assets/mls/orlando.png" alt="Orlando City SC" />'},
+    {name: "Atlanta United FC", gen: 63, logo: '<img src="assets/mls/atlanta.png" alt="Atlanta United FC" />'},
+    {name: "Real Salt Lake", gen: 62, logo: '<img src="assets/mls/rsl.png" alt="Real Salt Lake" />'},
+    {name: "Houston Dynamo FC", gen: 61, logo: '<img src="assets/mls/houston.png" alt="Houston Dynamo FC" />'},
+    {name: "Nashville SC", gen: 60, logo: '<img src="assets/mls/nashville.png" alt="Nashville SC" />'},
+    {name: "Vancouver Whitecaps FC", gen: 60, logo: '<img src="assets/mls/whitecaps.png" alt="Vancouver Whitecaps FC" />'},
+    {name: "New York Red Bulls", gen: 60, logo: '<img src="assets/mls/redbulls.png" alt="New York Red Bulls" />'},
+    {name: "Minnesota United FC", gen: 60, logo: '<img src="assets/mls/minnesota.png" alt="Minnesota United FC" />'},
+    {name: "Portland Timbers", gen: 60, logo: '<img src="assets/mls/timbers.png" alt="Portland Timbers" />'},
+    {name: "LA Galaxy", gen: 65, logo: '<img src="assets/mls/galaxy.png" alt="LA Galaxy" />'},
+    {name: "Austin FC", gen: 60, logo: '<img src="assets/mls/austin.png" alt="Austin FC" />'},
+    {name: "Chicago Fire FC", gen: 60, logo: '<img src="assets/mls/chicago.png" alt="Chicago Fire FC" />'},
+    {name: "Sporting Kansas City", gen: 60, logo: '<img src="assets/mls/sportingkc.png" alt="Sporting Kansas City" />'},
+    {name: "CF Montréal", gen: 60, logo: '<img src="assets/mls/montreal.png" alt="CF Montréal" />'},
+    {name: "DC United", gen: 60, logo: '<img src="assets/mls/dcunited.png" alt="DC United" />'},
+    {name: "San Jose Earthquakes", gen: 60, logo: '<img src="assets/mls/earthquakes.png" alt="San Jose Earthquakes" />'},
+    {name: "Toronto FC", gen: 60, logo: '<img src="assets/mls/toronto.png" alt="Toronto FC" />'},
+    {name: "Colorado Rapids", gen: 60, logo: '<img src="assets/mls/rapids.png" alt="Colorado Rapids" />'},
+    {name: "Charlotte FC", gen: 60, logo: '<img src="assets/mls/charlotte.png" alt="Charlotte FC" />'},
+    {name: "New York City FC", gen: 50, logo: '<img src="assets/mls/nycfc.png" alt="New York City FC" />'}
+]
 
 // Match simulator team selection
 let team1 = document.getElementById("matchSimulatorTeam1");
