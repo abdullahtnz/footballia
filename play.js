@@ -20,22 +20,6 @@ matchSimulatorBack.onclick = function() {
     
 }
 
-let a = 6
-console.log(a)
-let b = a*5
-console.log(b)
-console.log("yea")
-console.log(a+b)
-var x = "test"
-console.log(x)
-console.log(x+x)
-let c = 56
-console.log(c)
-let baba = c + a
-console.log(baba)
-let say = "yeah"
-console.log(say)
-// these are for commit purposes.
 
 
 
