@@ -790,7 +790,7 @@ document.getElementById("matchSimulatorStart").onclick = function(){
             draw = probabilityArray.filter(item => item === 0).length;
             break;
         default:
-            console.log("working on it...");
+            result=1;
     };  
 
     if (gen2 > gen1) { 
