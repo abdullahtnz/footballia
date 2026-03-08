@@ -3,101 +3,640 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FootBallia</title>
+  <title>FootBallia - Open Source Football API</title>
   <link rel="stylesheet" href="style.css" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
     rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 5%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #fff 0%, #e0e0e0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .github-btn {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .github-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 5%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
+      animation: rotate 20s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .stats-container {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin: 3rem 0;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ffd700;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .cta-primary, .cta-secondary {
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta-primary {
+      background: #fff;
+      color: #667eea;
+    }
+
+    .cta-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .cta-secondary {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .cta-secondary:hover {
+      background: #fff;
+      color: #667eea;
+      transform: translateY(-3px);
+    }
+
+    /* Features Section */
+    .features {
+      padding: 5rem 5%;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      opacity: 0.8;
+      margin-bottom: 4rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card p {
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    /* Leagues Section */
+    .leagues-preview {
+      padding: 5rem 5%;
+    }
+
+    .leagues-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 3rem auto;
+    }
+
+    .league-item {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 1.5rem;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .league-item:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .league-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+      filter: brightness(0) invert(1);
+    }
+
+    .league-item span {
+      display: block;
+      font-weight: 600;
+    }
+
+    /* API Demo Section */
+    .api-demo {
+      padding: 5rem 5%;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    .demo-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      background: #1a1a2e;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .demo-header {
+      background: #16213e;
+      padding: 1rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .demo-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .demo-dot.red { background: #ff5f56; }
+    .demo-dot.yellow { background: #ffbd2e; }
+    .demo-dot.green { background: #27c93f; }
+
+    .demo-content {
+      padding: 2rem;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+    }
+
+    .demo-content pre {
+      color: #00ff00;
+      overflow-x: auto;
+    }
+
+    .demo-content .comment {
+      color: #808080;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      text-align: center;
+      padding: 5rem 5%;
+    }
+
+    .cta-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      opacity: 0.8;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 3rem 5% 1.5rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section ul li a {
+      color: #fff;
+      opacity: 0.8;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .footer-section ul li a:hover {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .stats-container {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="dnone" id="welcomeContainer" >
-    <h1>Welcome to FootBallia</h1>
-    <p style="text-align: center;">
-      A fun website for football fans
-    </p>
-    <a id="startButton">Start</a>
-  </div>
-
-    <div id="modeChoiceContainer" >
-      <h1>Choose an option</h1>
-      <p style="margin-bottom: 8px;">Pick something you'd like to try out</p>
-        <div id="modeContainer">
-          <a class="mode " id="matchSimulator" >Match simulator</a>
-          <a class="mode comingSoon">League simulator</a>
-          <a class="mode comingSoon" id="startLine">StartLine</a>
-          <a class="mode comingSoon">Football quiz</a>
-          <a class="mode comingSoon">Football bingo</a>
-          <a class="mode comingSoon">Transer news</a>
-          <a class="mode comingSoon">Team Comparison</a>
-          <a class="mode comingSoon special">Career mode</a>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fas fa-futbol" style="margin-right: 10px;"></i>
+      FootBallia
     </div>
-  
-    <div id="matchSimulatorContainer">
-        <h1>Pick clubs</h1>
-        <p>Choose two clubs you want to simulate match</p>
-        <div class="cardContainer">
-            <div class="card" id="matchSimulatorTeam1"></div>
-            <span style="font-weight: 900; display: flex; align-items: center;">VS</span>
-            <div class="card" id="matchSimulatorTeam2"></div>
-        </div>
-        <a id="matchSimulatorStart" onclick="">Start match</a>
-        <a id="matchSimulatorBack" style="margin-top: 6px; cursor: pointer;">< Back</a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#leagues">Leagues</a>
+      <a href="#api">API</a>
+      <a href="#docs">Documentation</a>
+      <a href="https://github.com/yourusername/footballia" class="github-btn">
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
     </div>
+  </nav>
 
-    <div id="startLineContainer">
-      <h1>Create your line-up</h1>
-      <p>You can customize it however you want</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Open Source Football API</h1>
+      <p>Access comprehensive football data including teams, players, matches, and statistics from leagues worldwide. Free and open for everyone.</p>
+      
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Leagues</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Teams</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Free Access</div>
+        </div>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="#get-started" class="cta-primary">Get Started</a>
+        <a href="#api-demo" class="cta-secondary">Try API Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2 class="section-title">Why Choose FootBallia?</h2>
+    <p class="section-subtitle">Comprehensive football data at your fingertips</p>
+    
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚽</div>
+        <h3>Real-time Data</h3>
+        <p>Access live match scores, player statistics, and team performances updated in real-time.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Advanced Statistics</h3>
+        <p>Detailed analytics including xG, possession, passing accuracy, and player ratings.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>RESTful API</h3>
+        <p>Simple and intuitive API endpoints with comprehensive documentation and examples.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🔓</div>
+        <h3>100% Open Source</h3>
+        <p>Fully open-source codebase. Contribute, modify, and deploy your own instance.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>Global Coverage</h3>
+        <p>Data from major leagues including Premier League, La Liga, Serie A, Bundesliga, and more.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3>Fast & Reliable</h3>
+        <p>Optimized queries and caching for lightning-fast response times.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leagues Preview -->
+  <section id="leagues" class="leagues-preview">
+    <h2 class="section-title">Supported Leagues</h2>
+    <p class="section-subtitle">Data from top leagues around the world</p>
+    
+    <div class="leagues-grid">
+      <div class="league-item">
+        <img src="assets/leagues/premier-league-2-logo.png" alt="Premier League">
+        <span>Premier League</span>
+      </div>
+      <div class="league-item">
+        <img src="assets/leagues/laliga-logo.png" alt="La Liga">
+        <span>La Liga</span>
+      </div>
+      <div class="league-item">
+        <img src="assets/leagues/serie-a-logo.png" alt="Serie A">
+        <span>Serie A</span>
+      </div>
+      <div class="league-item">
+        <img src="assets/leagues/bundesliga-logo.png" alt="Bundesliga">
+        <span>Bundesliga</span>
+      </div>
+      <div class="league-item">
+        <img src="assets/leagues/ligue-1-logo.png" alt="Ligue 1">
+        <span>Ligue 1</span>
+      </div>
+      <div class="league-item">
+        <img src="assets/leagues/eredivisie.png" alt="Eredivisie">
+        <span>Eredivisie</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- API Demo Section -->
+  <section id="api-demo" class="api-demo">
+    <h2 class="section-title">API in Action</h2>
+    <p class="section-subtitle">Try our API endpoints right now</p>
+    
+    <div class="demo-container">
+      <div class="demo-header">
+        <div class="demo-dot red"></div>
+        <div class="demo-dot yellow"></div>
+        <div class="demo-dot green"></div>
+      </div>
+      <div class="demo-content">
+        <pre>
+<span class="comment">// Get team information</span>
+GET /api/v1/teams/premier-league
+
+<span class="comment">// Response</span>
+{
+  "status": "success",
+  "data": {
+    "teams": [
+      {
+        "name": "Liverpool",
+        "rating": 92,
+        "league": "Premier League",
+        "stats": {
+          "wins": 24,
+          "draws": 8,
+          "losses": 2
+        }
+      }
+    ]
+  }
+}</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2>Ready to build something amazing?</h2>
+    <p>Join hundreds of developers using FootBallia API</p>
+    <div class="cta-buttons">
+      <a href="#docs" class="cta-primary">Read Documentation</a>
+      <a href="#get-started" class="cta-secondary">Start Building</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>FootBallia</h4>
+        <p>Open-source football API for developers worldwide. Free, fast, and reliable.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#docs">Documentation</a></li>
+          <li><a href="#api">API Reference</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com">GitHub</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">License</a></li>
+        </ul>
+      </div>
     </div>
     
-    <div id="leagueChoiceContainer">
-        <h1>Choose your league</h1>
-        <p>Pick one league to continue</p>
-        <div class="cardContainer">
-              <div class="card" id="premier"><img src="assets/leagues/premier-league-2-logo.png" alt=""></div>
-              <div class="card" id="laliga"><img src="assets/leagues/laliga-logo.png" alt=""></div>
-              <div class="card" id="seriea"><img src="assets/leagues/serie-a-logo.png" alt=""></div>
-              <div class="card" id="bundesliga"><img src="assets/leagues/bundesliga-logo.png" alt=""></div>
-              <div class="card" id="ligue1"><img src="assets/leagues/ligue-1-logo.png" alt=""></div>
-              <div class="card" id="ligaPortugal"><img src="assets/leagues/po1.png" alt=""></div>
-              <div class="card" id="superlig"><img src="assets/leagues/Trendyol-super-lig-dikey-logo.png" alt="" style="width: 200%; height: 200%;"></div>
-              <div class="card" id="misli"><img src="assets/leagues/az1.png" alt="" style="width: 130% ; height: 130%;"></div>
-              <div class="card" id="eredivisie"><img src="assets/leagues/eredivisie.png" alt=""></div>
-              <div class="card" id="mls"><img src="assets/leagues/mls.png" alt=""></div>
-        </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 FootBallia. Open source under MIT License. Made with ❤️ for football fans.</p>
     </div>
+  </footer>
 
-     <div id="ChoiceContainer">
-        <h1>Choose your team</h1>
-        <p>Pick one team to continue</p>
-        <div class="cardContainer" id="LeagueTeams">
-               
-        </div>
-    </div>
-
-    <div id="resultContainer">
-        <h1>Simulation results</h1>
-        <p>These are expected and mathematically calculated results</p>
-        <div class="cardContainer">
-            <div class="card" id="matchSimulatorResult1"></div>
-            <span style="font-weight: 900; display: flex; align-items: center; font-size: 1.2rem;" id="scoreBoard"></span>
-            <div class="card" id="matchSimulatorResult2"></div>
-        </div>
-        <h3><span id="finalText"></span></h3>
-        <p>Probabilities in order:</p>
-        <div id="probability">
-          
-          <div id="win1"></div>
-          
-          <div id="draw"></div>
-          <div id="win2"></div>
-        </div>
-        <br>
-        <a id="matchSimulatorPlayAgain">Play again</a>
-        <a id="matchSimulatorMainMenu" style="margin-top: 6px; cursor: pointer;">< Main Menu</a>
-    </div>
-  
-  <script src="matchSim.js"> </script>
+  <!-- Your existing scripts -->
+  <script src="matchSim.js"></script>
   <script src="play.js"></script>
 </body>
 </html>
