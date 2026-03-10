@@ -216,6 +216,8 @@ const mlsTeams = [
     {name: "New York City FC", gen: 50, logo: '<img src="assets/mls/nycfc.png" alt="New York City FC" />'}
 ]
 
+const ArabiaLeaugeTeams=[]
+
 // Match simulator team selection
 let team1 = document.getElementById("matchSimulatorTeam1");
 let team2 = document.getElementById("matchSimulatorTeam2");
