@@ -216,7 +216,26 @@ const mlsTeams = [
     {name: "New York City FC", gen: 50, logo: '<img src="assets/mls/nycfc.png" alt="New York City FC" />'}
 ]
 
-const ArabiaLeaugeTeams=[]
+const saudiTeams = [
+    {name: "Al-Hilal SFC", gen: 85, logo: '<img src="assets/saudi/alhilal.png" alt="Al-Hilal SFC" />'},
+    {name: "Al-Nassr FC", gen: 83, logo: '<img src="assets/saudi/alnassr.png" alt="Al-Nassr FC" />'},
+    {name: "Al-Ittihad Club", gen: 82, logo: '<img src="assets/saudi/alittihad.png" alt="Al-Ittihad Club" />'},
+    {name: "Al-Ahli Saudi FC", gen: 80, logo: '<img src="assets/saudi/alahli.png" alt="Al-Ahli Saudi FC" />'},
+    {name: "Al-Shabab FC", gen: 74, logo: '<img src="assets/saudi/alshabab.png" alt="Al-Shabab FC" />'},
+    {name: "Al-Fayha FC", gen: 68, logo: '<img src="assets/saudi/alfayha.png" alt="Al-Fayha FC" />'},
+    {name: "Al-Taawoun FC", gen: 68, logo: '<img src="assets/saudi/altaawoun.png" alt="Al-Taawoun FC" />'},
+    {name: "Damac FC", gen: 67, logo: '<img src="assets/saudi/damac.png" alt="Damac FC" />'},
+    {name: "Al-Raed FC", gen: 66, logo: '<img src="assets/saudi/alraed.png" alt="Al-Raed FC" />'},
+    {name: "Al-Ettifaq FC", gen: 66, logo: '<img src="assets/saudi/alettifaq.png" alt="Al-Ettifaq FC" />'},
+    {name: "Al-Khaleej FC", gen: 65, logo: '<img src="assets/saudi/alkhaleej.png" alt="Al-Khaleej FC" />'},
+    {name: "Al-Okhdood Club", gen: 64, logo: '<img src="assets/saudi/alokhdood.png" alt="Al-Okhdood Club" />'},
+    {name: "Al-Wehda FC", gen: 64, logo: '<img src="assets/saudi/alwehda.png" alt="Al-Wehda FC" />'},
+    {name: "Al-Riyadh SC", gen: 63, logo: '<img src="assets/saudi/alriyadh.png" alt="Al-Riyadh SC" />'},
+    {name: "Al-Hazem FC", gen: 62, logo: '<img src="assets/saudi/alhazem.png" alt="Al-Hazem FC" />'},
+    {name: "Abha Club", gen: 62, logo: '<img src="assets/saudi/abha.png" alt="Abha Club" />'},
+    {name: "Al-Tai FC", gen: 61, logo: '<img src="assets/saudi/altai.png" alt="Al-Tai FC" />'},
+    {name: "Al-Fateh SC", gen: 61, logo: '<img src="assets/saudi/alfateh.png" alt="Al-Fateh SC" />'}
+]
 
 // Match simulator team selection
 let team1 = document.getElementById("matchSimulatorTeam1");
