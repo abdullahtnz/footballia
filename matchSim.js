@@ -218,7 +218,7 @@ const mlsTeams = [
 
 const saudiTeams = [
     {name: "Al-Hilal SFC", gen: 85, logo: '<img src="assets/saudi/alhilal.png" alt="Al-Hilal SFC" />'},
-    {name: "Al-Nassr FC", gen: 83, logo: '<img src="assets/saudi/alnassr.png" alt="Al-Nassr FC" />'},
+    {name: "Al-Nassr FC", gen: 81, logo: '<img src="assets/saudi/alnassr.png" alt="Al-Nassr FC" />'},
     {name: "Al-Ittihad Club", gen: 82, logo: '<img src="assets/saudi/alittihad.png" alt="Al-Ittihad Club" />'},
     {name: "Al-Ahli Saudi FC", gen: 80, logo: '<img src="assets/saudi/alahli.png" alt="Al-Ahli Saudi FC" />'},
     {name: "Al-Shabab FC", gen: 74, logo: '<img src="assets/saudi/alshabab.png" alt="Al-Shabab FC" />'},
