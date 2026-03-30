@@ -15,7 +15,7 @@ const premierLeagueTeams = [
     {name: "Fulham", gen: 77, logo: '<img src="assets/premierTeams/Fulham.png" />' },
     {name: "Leeds United", gen: 70, logo: '<img src="assets/premierTeams/Leeds.png" />' },
     {name: "Newcastle United", gen: 85, logo: '<img src="assets/premierTeams/Newcastle.png" />' },
-    {name: "Sunderland", gen: 65, logo: '<img src="assets/premierTeams/Sunderland.png" />' },
+    {name: "Sunderland", gen: 70, logo: '<img src="assets/premierTeams/Sunderland.png" />' },
     {name: "Westham United", gen: 79, logo: '<img src="assets/premierTeams/Westham.png" />' },
     {name: "Wolverhampton", gen: 76, logo: '<img src="assets/premierTeams/Wolverhampton.png" />' },
 ]
