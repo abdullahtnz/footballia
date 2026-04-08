@@ -22,7 +22,7 @@ const premierLeagueTeams = [
 
 const laligaTeams = [
     {name: "Barcelona", gen: 91, logo: '<img src="assets/laligaTeams/barcelona.png" />'},
-    {name: "Real Madrid", gen: 93, logo: '<img src="assets/laligaTeams/realmadrid.png" />'},
+    {name: "Real Madrid", gen: 90, logo: '<img src="assets/laligaTeams/realmadrid.png" />'},
     {name: "Atlético Madrid", gen: 88, logo: '<img src="assets/laligaTeams/atleticomadrid.png" />'},
     {name: "Real Sociedad", gen: 84, logo: '<img src="assets/laligaTeams/realsociedad.png" />'},
     {name: "Athletic Bilbao", gen: 83, logo: '<img src="assets/laligaTeams/athleticbilbao.png" />'},
